@@ -30,6 +30,12 @@ section{padding:54px 20px} .wrap{max-width:980px;margin:auto} .card{background:r
 .form-preview ul{margin:.2em 0 0;padding-left:1.4em}
 .form-preview li{margin:.25em 0}
 
+
+.rsvp-main-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-width:min(560px,100%);margin:18px auto 8px;padding:20px 28px;border-radius:18px;text-decoration:none;font-weight:900;font-size:clamp(22px,4.6vw,34px);letter-spacing:.04em;color:#fff;background:linear-gradient(135deg,#1f5f64,#2f776f);box-shadow:0 12px 28px rgba(31,95,100,.25), inset 0 1px 0 rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.35)}
+.rsvp-main-btn small{display:block;font-size:clamp(13px,2.8vw,18px);font-weight:600;letter-spacing:.02em;opacity:.92;margin-top:2px}
+.rsvp-main-btn span{display:block;line-height:1.25}.rsvp-main-btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
+.rsvp-note{margin-top:12px;font-size:14px;color:#6d604f}
+@media (max-width:640px){.rsvp-main-btn{padding:17px 20px;border-radius:16px}}
 </style>
 </head>
 <body>
@@ -76,7 +82,7 @@ section{padding:54px 20px} .wrap{max-width:980px;margin:auto} .card{background:r
     <div>宿泊参加<br><b>14,000円</b>（会食・アルコール飲み放題）</div>
     <div>宿泊参加<br><b>13,000円</b>（会食・ソフトドリンク飲み放題）</div>
    </div>
-   <p class="note">参加・宿泊・送迎の希望は、幹事までご連絡ください。</p>
+   <p class="note">参加・宿泊・送迎の希望は、下記フォームよりご回答ください。</p>
   </div>
  </div>
 </section>
@@ -86,23 +92,11 @@ section{padding:54px 20px} .wrap{max-width:980px;margin:auto} .card{background:r
  <div class="wrap card form-card">
   <p class="kicker">RSVP</p>
   <h2>同級会 出欠確認</h2>
-  <p>参加人数や送迎・宿泊の準備のため、下記のGoogleフォームより出欠をお知らせください。</p>
-  <div class="btns">
-   <a class="btn" href="GOOGLE_FORM_URL_HERE" target="_blank" rel="noopener">出欠確認フォームを開く</a>
-  </div>
-  <p class="note">※Googleフォーム作成後、上のリンク「GOOGLE_FORM_URL_HERE」をフォームのURLに差し替えてください。</p>
-  <div class="form-preview">
-   <h3>フォーム内容</h3>
-   <ul>
-    <li>名前</li>
-    <li>旧姓</li>
-    <li>出席／欠席／未定</li>
-    <li>日帰り／宿泊</li>
-    <li>送迎希望あり・なし</li>
-    <li>連絡先</li>
-    <li>ひと言メッセージ</li>
-   </ul>
-  </div>
+  <p>参加人数や送迎・宿泊の準備のため、下記のGoogleフォームより出欠をご回答ください。</p>
+  <a class="rsvp-main-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeQUO47hHTbVrpPXFSAoLO5i05_x4p2Xa_rXk4RVqW-iZFAsg/viewform?usp=dialog" target="_blank" rel="noopener" aria-label="Googleフォームで出欠を回答する">
+   <span>✎ 出欠を回答する<small>Googleフォームが開きます</small></span>
+  </a>
+  <p class="rsvp-note">※ボタンを押すとGoogleフォームのページが別画面で開きます。</p>
  </div>
 </section>
 
